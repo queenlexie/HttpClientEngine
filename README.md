@@ -1,6 +1,6 @@
 # HttpClientEngine
 
-Sample body for calls: 
+Sample body for request: 
 
 ```yaml
 {
