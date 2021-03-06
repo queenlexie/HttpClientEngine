@@ -1,8 +1,8 @@
-package com.example.main.helloworld.route
+package com.example.main.route
 
-import com.example.main.helloworld.model.Customer
-import com.example.main.helloworld.model.Response
-import com.example.main.helloworld.repository.CustomerRepo
+import com.example.main.model.Customer
+import com.example.main.model.Response
+import com.example.main.repository.CustomerRepo
 import io.ktor.routing.Route
 import io.ktor.routing.route
 import io.ktor.application.*
@@ -26,7 +26,9 @@ fun Route.customer(customerRepo: CustomerRepo) {
             if (requestCustomer != null) {
                 call.respond(HttpStatusCode.OK, requestCustomer)
             } else {
-                call.respond(HttpStatusCode.NotFound, Response("Record Not Found"))
+                call.respond(HttpStatusCode.NotFound,
+                    Response("Record Not Found")
+                )
             }
         }
 

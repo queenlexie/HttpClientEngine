@@ -1,8 +1,8 @@
-package com.example.main.helloworld
+package com.example.main
 
-import com.example.main.helloworld.repository.CustomerRepo
-import com.example.main.helloworld.route.customer
-import com.example.main.helloworld.route.helloWorld
+import com.example.main.repository.CustomerRepo
+import com.example.main.route.customer
+import com.example.main.route.helloWorld
 import io.ktor.application.*
 import io.ktor.features.ContentNegotiation
 import io.ktor.gson.gson

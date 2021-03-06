@@ -1,4 +1,4 @@
-package com.example.main.helloworld.model
+package com.example.main.model
 
 data class Customer(
     val id: Int,

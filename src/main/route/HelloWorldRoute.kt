@@ -1,4 +1,4 @@
-package com.example.main.helloworld.route
+package com.example.main.route
 
 import io.ktor.application.call
 import io.ktor.http.ContentType
